@@ -5,9 +5,9 @@ describe('Array', function() {
       assert.equal([1, 2, 3].indexOf(4), -1);
     });
   });
-  // describe('#indexOf()', function() {
-  //   it('should return 1 for first vaulue', function() {
-  //     assert.equal([0, 2, 3].indexOf(0), 1);
-  //   });
-  // });
+  describe('#indexOf()', function() {
+    it('should return 1 for first vaulue', function() {
+      assert.equal([0, 2, 3].indexOf(0), 1);
+    });
+  });
 });
