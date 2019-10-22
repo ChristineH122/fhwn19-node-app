@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '4269919f-1162-4eba-acad-8a235815df41'
+  azureSubscription: '6ff8ceda-af9a-40c1-80b1-c80ebf326e0c'
   
   # Web app name
-  webAppName: 'fhwn19-node-app-05'
+  webAppName: 'fhwn2019-node-app-05-Development'
   
   # Environment name
-  environmentName: 'fhwn19-node-app-05'
+  environmentName: 'fhwn2019-node-app-05-Development'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: fhwn19-node-app-05'
+            displayName: 'Azure Web App Deploy: fhwn2019-node-app-05-Development'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
